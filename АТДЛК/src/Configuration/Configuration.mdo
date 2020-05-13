@@ -29,4 +29,11 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.НСИ</subsystems>
+  <roles>Role.ПолныеПрава</roles>
+  <roles>Role.БазовыеПрава</roles>
+  <roles>Role.ДобавлениеИзменениеКонтрагентов</roles>
+  <roles>Role.ЧтениеКонтерагентов</roles>
+  <roles>Role.ПодсистемаНСИ</roles>
+  <catalogs>Catalog.Контрагенты</catalogs>
 </mdclass:Configuration>
