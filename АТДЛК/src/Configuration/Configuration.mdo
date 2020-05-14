@@ -30,10 +30,16 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.НСИ</subsystems>
+  <subsystems>Subsystem.Логистика</subsystems>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.БазовыеПрава</roles>
   <roles>Role.ДобавлениеИзменениеКонтрагентов</roles>
   <roles>Role.ЧтениеКонтерагентов</roles>
   <roles>Role.ПодсистемаНСИ</roles>
+  <roles>Role.ДобавлениеИзменениеЗаявокКлиентов</roles>
+  <roles>Role.ЧтениеЗаявокКлиентов</roles>
+  <roles>Role.ПодсистемаЛогистика</roles>
   <catalogs>Catalog.Контрагенты</catalogs>
+  <documents>Document.ВедениеСпискаЗаявокКлиентов</documents>
+  <enums>Enum.ПеречислениеСтатусЗаявкиКлиента</enums>
 </mdclass:Configuration>
