@@ -40,6 +40,9 @@
   <roles>Role.ЧтениеЗаявокКлиентов</roles>
   <roles>Role.ПодсистемаЛогистика</roles>
   <catalogs>Catalog.Контрагенты</catalogs>
-  <documents>Document.ВедениеСпискаЗаявокКлиентов</documents>
+  <catalogs>Catalog.Транспорт</catalogs>
+  <documents>Document.ЗаявкаКлиента</documents>
+  <documents>Document.ЗаявкаНаПеревозку</documents>
+  <documents>Document.МаршрутныйЛист</documents>
   <enums>Enum.ПеречислениеСтатусЗаявкиКлиента</enums>
 </mdclass:Configuration>

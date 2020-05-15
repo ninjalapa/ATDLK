@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce4d178b-b877-4699-9453-da6e96f24cac">
+  <producedTypes>
+    <objectType typeId="89ab6836-1b1e-4b54-b789-0a4a91cf33af" valueTypeId="df4ac81f-311a-44fd-8784-e5a085778876"/>
+    <refType typeId="1bc64223-75e6-43aa-bb95-fd28b95f55f6" valueTypeId="7f871f10-618d-404b-ba36-23e01914ed6e"/>
+    <selectionType typeId="8c357421-862c-45aa-b60b-0b8475f8d359" valueTypeId="93376281-3955-4078-99d1-2f32bf149f1e"/>
+    <listType typeId="a279e32b-f627-4390-9847-3308b4c0fd30" valueTypeId="cf40ee0d-c2d3-451a-be57-3c40275e8bda"/>
+    <managerType typeId="42b8e6b5-0d3c-4d10-9b7f-450f06f6bc1b" valueTypeId="89c899bf-bee4-409e-ba42-86042a626c3a"/>
+  </producedTypes>
+  <name>МаршрутныйЛист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Маршрутный лист</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.МаршрутныйЛист.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.МаршрутныйЛист.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="610fa1a2-9077-4131-aaf5-5a45bccde709">
+    <name>ЗаявкаКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка клиента</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаКлиента</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="84a0b562-f5dc-4fb2-a3d3-413c4c73524a">
+    <name>СтоимостьПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость перевозки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f1582eed-5e65-4db1-994e-212aceb339a6">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="e8670742-4854-48ec-942f-d5c00c065d0b">
+    <producedTypes>
+      <objectType typeId="025c3ce8-5c2f-44d7-a279-773146428153" valueTypeId="64eca186-a046-4bf6-99a5-830acb7aad7a"/>
+      <rowType typeId="d2b6b858-5673-4ebe-b5d0-477f0afd88d8" valueTypeId="6f0146b3-9a4f-42fd-b450-715cb394f008"/>
+    </producedTypes>
+    <name>Маршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрут</value>
+    </synonym>
+    <attributes uuid="3b40a585-dd5b-4ac2-9727-bfa166a3dec2">
+      <name>ЗаявкаНаПеревозку</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заявка на перевозку</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаявкаНаПеревозку</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f785be50-e0dc-4769-ad36-022c782f7e61">
+      <name>НачальнаяТочка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начальная точка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>250</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="007f839f-9a97-4424-8e51-d335f0c0d4e9">
+      <name>КонечнаяТочка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конечная точка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>250</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="205edace-f68c-4894-8f5b-456913c3f45d">
+      <name>Перевозчик</name>
+      <synonym>
+        <key>ru</key>
+        <value>Перевозчик</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="44d41e27-398b-464b-8530-766396a07a7a">
+      <name>Стоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2cba9bac-67bf-44e8-b821-f789efba1719">
+      <name>Статус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ПеречислениеСтатусЗаявкиКлиента</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

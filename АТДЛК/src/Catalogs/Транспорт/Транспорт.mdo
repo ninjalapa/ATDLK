@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="365700dc-6682-40c5-b604-939df4636607">
+  <producedTypes>
+    <objectType typeId="1fa0eb2e-7bdc-46e9-8968-1bc25190ddaa" valueTypeId="cec1a57f-8a83-4286-b951-e9c8bb69df89"/>
+    <refType typeId="b3533fab-b730-42a1-9b9c-0227ac746700" valueTypeId="4d87efb1-ec7b-49cd-9f8c-9b895b1e9860"/>
+    <selectionType typeId="5a4785a5-ebbe-49b9-b451-c80a2e6bbcaa" valueTypeId="c1f8b710-fce7-49e8-8cc5-ac384a8d2b38"/>
+    <listType typeId="c376f56f-c9b8-450a-8d31-b987293e0030" valueTypeId="3feac0b1-0ceb-40f5-bc3f-758e94cfd715"/>
+    <managerType typeId="424c018c-2171-4ad4-92a6-2676e54b2c84" valueTypeId="5ae87a64-5078-4e46-a5f2-46b7c360ec7a"/>
+  </producedTypes>
+  <name>Транспорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транспорт</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Транспорт.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Транспорт.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="0833f4d4-913b-471f-b965-bc0f9296ec0b">
+    <name>Перевозчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевозчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="821525b6-cf48-41ba-bef5-d8cdb46aec6f">
+    <name>Грузоподъемность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузоподъемность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3302fb87-f8f0-48db-84cf-e971011cd06f">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

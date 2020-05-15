@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Document.ВедениеСпискаЗаявокКлиентов</name>
+		<name>Document.ЗаявкаКлиента</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

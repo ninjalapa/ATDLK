@@ -7,13 +7,13 @@
     <listType typeId="5b6578ff-865b-427a-8b4b-d6a83372f0f3" valueTypeId="d30c51f1-d57c-42ec-b784-e9e760df2140"/>
     <managerType typeId="a3af76ab-dbd1-420d-8ca3-74bf103e0d50" valueTypeId="d80e954b-a619-42c7-a510-407ec4e43bc0"/>
   </producedTypes>
-  <name>ВедениеСпискаЗаявокКлиентов</name>
+  <name>ЗаявкаКлиента</name>
   <synonym>
     <key>ru</key>
-    <value>Ведение списка заявок клиентов</value>
+    <value>Заявка клиента</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ВедениеСпискаЗаявокКлиентов.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ЗаявкаКлиента.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <help>
@@ -28,8 +28,8 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ВедениеСпискаЗаявокКлиентов.Form.ФормаДокумента</defaultObjectForm>
-  <defaultListForm>Document.ВедениеСпискаЗаявокКлиентов.Form.ФормаСписка</defaultListForm>
+  <defaultObjectForm>Document.ЗаявкаКлиента.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЗаявкаКлиента.Form.ФормаСписка</defaultListForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="3802d994-4280-4334-965c-5da45159bfa4">
@@ -53,7 +53,7 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>13</precision>
+        <precision>10</precision>
         <scale>2</scale>
       </numberQualifiers>
     </type>

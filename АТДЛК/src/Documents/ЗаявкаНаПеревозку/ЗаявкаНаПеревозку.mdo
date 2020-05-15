@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fd73458-9978-48e3-bf0b-fc091859bc15">
+  <producedTypes>
+    <objectType typeId="432063cb-382c-4530-9d9d-cf408d5f09ae" valueTypeId="fcf3bcb5-479c-4a5f-8ea4-362c3deabce2"/>
+    <refType typeId="7f682d68-e1fd-4a18-9821-63fab4ecb9b2" valueTypeId="6f53a400-41ac-48c2-bf50-24c7e2c9c375"/>
+    <selectionType typeId="c08312ea-4531-4780-be7b-26563d82da3f" valueTypeId="40877ff5-1f2e-4186-bcad-b2e8314e41e6"/>
+    <listType typeId="b7d22cc5-342d-463f-8f4f-00b6c87024c3" valueTypeId="ba2701c5-f6a2-4a12-b6fb-9654d4a421c4"/>
+    <managerType typeId="ce4c9239-e0d9-4e90-a8b9-ea6a031d054e" valueTypeId="8542acf5-fec5-431b-b3a0-bb6dc2dd909c"/>
+  </producedTypes>
+  <name>ЗаявкаНаПеревозку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявка на перевозку</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗаявкаНаПеревозку.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗаявкаНаПеревозку.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="5ebefe66-0549-41ea-b955-35db13ba0b8b">
+    <name>Перевозчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевозчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25593886-aec5-466f-af7a-f0bf4a6f7815">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ead340df-5e4a-4b42-8b43-494611215ed3">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПеречислениеСтатусЗаявкиКлиента</types>
+    </type>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ПеречислениеСтатусЗаявкиКлиента.EnumValue.Зарегистрирована</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1de80deb-06f2-496b-9aac-62c5693c95df">
+    <name>ДатаПогрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата погрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3c6beb9c-376f-4eaf-a90f-83347f0c2a1d">
+    <name>ТочкаПогрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка погрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="299503fc-b0bf-4783-94f8-7cd2d5f02087">
+    <name>ДатаРазгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата разгрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e98446e4-651c-42be-8a7c-c180b971caf3">
+    <name>ТочкаРазрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка разрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8991883c-ca2f-44da-885a-e2f741b3c3d1">
+    <name>Транспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспорт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Транспорт</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d4ef47de-1d7e-4b33-8f80-150c26bb041b">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
