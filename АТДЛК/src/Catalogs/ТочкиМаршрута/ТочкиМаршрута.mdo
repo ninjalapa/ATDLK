@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a45b7a60-572f-4c7e-aff5-eff293da13e7">
+  <producedTypes>
+    <objectType typeId="2b408b1c-d73f-484e-93ec-a3944b39d5b2" valueTypeId="e90d7f0f-e71f-4f3b-a191-eaf020b76b89"/>
+    <refType typeId="5e15f209-5445-4db8-9f30-a7d0e5188dee" valueTypeId="86b158e2-773e-40a7-a69e-63fff5e2d4c1"/>
+    <selectionType typeId="e437670a-e2c3-40dd-998f-41101ab5dc82" valueTypeId="bf17fca0-9734-4f2d-b48d-0cc3b594fdd2"/>
+    <listType typeId="e32b17fa-9407-4ba4-ad92-f1e5701d4ac3" valueTypeId="f5b2bce8-d0e2-42da-912a-f14834d45e13"/>
+    <managerType typeId="b33d3556-8888-4972-8d28-97c4f766f4e2" valueTypeId="5f86c368-e585-4f34-98f8-c06bd130c49a"/>
+  </producedTypes>
+  <name>ТочкиМаршрута</name>
+  <synonym>
+    <key>ru</key>
+    <value>Точки маршрута</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТочкиМаршрута.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ТочкиМаршрута.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

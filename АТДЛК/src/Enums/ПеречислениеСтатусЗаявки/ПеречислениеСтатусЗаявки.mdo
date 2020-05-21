@@ -5,18 +5,18 @@
     <listType typeId="70f94641-2891-4c88-9ddf-d62a03b94665" valueTypeId="4db9c5e7-33af-4f22-b704-1c45065268c0"/>
     <managerType typeId="9e6b067b-0489-4602-86bc-6ae61ef32eb9" valueTypeId="b836e62b-badf-49a6-b062-0786340f5d45"/>
   </producedTypes>
-  <name>ПеречислениеСтатусЗаявкиКлиента</name>
+  <name>ПеречислениеСтатусЗаявки</name>
   <synonym>
     <key>ru</key>
-    <value>Перечисление статус заявки клиента</value>
+    <value>Перечисление статус заявки</value>
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
   <enumValues uuid="5a64f46e-e92d-4595-b588-1fa018c717ea">
-    <name>Зарегистрирована</name>
+    <name>НаСогласование</name>
     <synonym>
       <key>ru</key>
-      <value>Зарегистрирована</value>
+      <value>На согласование</value>
     </synonym>
   </enumValues>
   <enumValues uuid="107b19c0-d798-4e0a-a81b-f6b59feb43e9">
@@ -31,6 +31,13 @@
     <synonym>
       <key>ru</key>
       <value>Завершена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1cfe8644-fb50-4854-bc59-c3607e589a77">
+    <name>Отменена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменена</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

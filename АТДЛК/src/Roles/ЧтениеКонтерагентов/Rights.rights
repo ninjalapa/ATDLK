@@ -6,15 +6,15 @@
 	<object>
 		<name>Catalog.Контрагенты</name>
 		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>

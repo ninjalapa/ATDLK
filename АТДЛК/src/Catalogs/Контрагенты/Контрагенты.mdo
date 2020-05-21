@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77364977-5186-4dbb-9f06-7c7c15c506f5">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77364977-5186-4dbb-9f06-7c7c15c506f5">
   <producedTypes>
     <objectType typeId="a21ecf51-9ad8-4263-9614-f80080aaf7ed" valueTypeId="b10aee51-2cd1-4be2-98fd-1afd96947b07"/>
     <refType typeId="ee7a05d4-7663-4f9e-a149-42aedaf91093" valueTypeId="418e1f6b-7f3b-48d1-9dfe-0603362ea590"/>
@@ -20,17 +20,37 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
-  <descriptionLength>25</descriptionLength>
+  <descriptionLength>120</descriptionLength>
   <codeType>String</codeType>
   <codeAllowedLength>Variable</codeAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c29b239b-7e50-44b2-94ce-deefca15b7b8">
+      <name>Клиенты</name>
+      <description>Клиенты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+    <items id="5b633f53-6230-4bde-9f40-c1fae7fd0474">
+      <name>Перевозчики</name>
+      <description>Перевозчики</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Catalog.Контрагенты.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="dec252ac-b5ea-4e40-8556-0931865a09d1">
     <name>ИНН</name>
     <synonym>
@@ -43,6 +63,11 @@
         <length>12</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -59,6 +84,11 @@
         <fixed>true</fixed>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -74,6 +104,11 @@
         <length>250</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -89,6 +124,11 @@
         <length>250</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -104,6 +144,11 @@
         <length>12</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -119,14 +164,19 @@
         <length>320</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="a404b5ec-ff45-49a4-ad48-e0af5bd9f2a4">
-    <name>Банк</name>
+  <attributes uuid="b37113a2-78d5-4bb3-abb9-cae947205536">
+    <name>ПолноеНаименование</name>
     <synonym>
       <key>ru</key>
-      <value>Банк</value>
+      <value>Полное наименование</value>
     </synonym>
     <type>
       <types>String</types>
@@ -134,38 +184,21 @@
         <length>120</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="f0a0fe26-2d7c-42e6-8925-112401c3b999">
-    <name>РасчётныйСчёт</name>
+  <forms uuid="79c87810-b23f-466a-86cd-8fc45215e042">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Расчётный счёт</value>
+      <value>Форма выбора</value>
     </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>25</length>
-      </stringQualifiers>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="3e5a88b1-f03a-4e18-8df3-d19363dfb467">
-    <name>БИК</name>
-    <synonym>
-      <key>ru</key>
-      <value>БИК</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>9</length>
-        <fixed>true</fixed>
-      </stringQualifiers>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

@@ -31,6 +31,7 @@
   </languages>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Логистика</subsystems>
+  <subsystems>Subsystem.Финансы</subsystems>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.БазовыеПрава</roles>
   <roles>Role.ДобавлениеИзменениеКонтрагентов</roles>
@@ -41,8 +42,13 @@
   <roles>Role.ПодсистемаЛогистика</roles>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Транспорт</catalogs>
+  <catalogs>Catalog.ТочкиМаршрута</catalogs>
   <documents>Document.ЗаявкаКлиента</documents>
   <documents>Document.ЗаявкаНаПеревозку</documents>
   <documents>Document.МаршрутныйЛист</documents>
-  <enums>Enum.ПеречислениеСтатусЗаявкиКлиента</enums>
+  <documents>Document.ПриходДенег</documents>
+  <documents>Document.АктВыполненныхРабот</documents>
+  <enums>Enum.ПеречислениеСтатусЗаявки</enums>
+  <enums>Enum.ВидТранспорта</enums>
+  <enums>Enum.ВидОплаты</enums>
 </mdclass:Configuration>

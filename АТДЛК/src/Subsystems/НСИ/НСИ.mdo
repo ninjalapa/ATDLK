@@ -9,4 +9,5 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Контрагенты</content>
   <content>Catalog.Транспорт</content>
+  <content>Catalog.ТочкиМаршрута</content>
 </mdclass:Subsystem>

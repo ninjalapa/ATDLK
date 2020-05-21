@@ -40,6 +40,9 @@
     <type>
       <types>CatalogRef.Контрагенты</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -56,6 +59,9 @@
         <scale>2</scale>
       </numberQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -66,10 +72,12 @@
       <value>Статус</value>
     </synonym>
     <type>
-      <types>EnumRef.ПеречислениеСтатусЗаявкиКлиента</types>
+      <types>EnumRef.ПеречислениеСтатусЗаявки</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ПеречислениеСтатусЗаявкиКлиента.EnumValue.Зарегистрирована</value>
+      <value>Enum.ПеречислениеСтатусЗаявки.EnumValue.НаСогласование</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -84,6 +92,9 @@
       <types>Date</types>
       <dateQualifiers/>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -96,9 +107,14 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>250</length>
+        <length>10</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -112,21 +128,29 @@
       <types>Date</types>
       <dateQualifiers/>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="e98446e4-651c-42be-8a7c-c180b971caf3">
-    <name>ТочкаРазрузки</name>
+    <name>ТочкаРазгрузки</name>
     <synonym>
       <key>ru</key>
-      <value>Точка разрузки</value>
+      <value>Точка разгрузки</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>250</length>
+        <length>10</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -139,14 +163,26 @@
     <type>
       <types>CatalogRef.Транспорт</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="d4ef47de-1d7e-4b33-8f80-150c26bb041b">
+  <forms uuid="e2223941-4e13-4546-93a8-31faffe19ab3">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d4ef47de-1d7e-4b33-8f80-150c26bb041b">
+    <name>ФормаДокументаМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа маршрута</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

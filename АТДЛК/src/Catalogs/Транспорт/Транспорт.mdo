@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="365700dc-6682-40c5-b604-939df4636607">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="365700dc-6682-40c5-b604-939df4636607">
   <producedTypes>
     <objectType typeId="1fa0eb2e-7bdc-46e9-8968-1bc25190ddaa" valueTypeId="cec1a57f-8a83-4286-b951-e9c8bb69df89"/>
     <refType typeId="b3533fab-b730-42a1-9b9c-0227ac746700" valueTypeId="4d87efb1-ec7b-49cd-9f8c-9b895b1e9860"/>
@@ -21,6 +21,7 @@
   <fullTextSearch>Use</fullTextSearch>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
   <codeLength>9</codeLength>
   <descriptionLength>25</descriptionLength>
   <codeType>String</codeType>
@@ -30,48 +31,39 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="0833f4d4-913b-471f-b965-bc0f9296ec0b">
-    <name>Перевозчик</name>
+  <defaultObjectForm>Catalog.Транспорт.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.Транспорт.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="fea6a2f0-997b-4768-a085-8d4bb882ff5b">
+    <name>Вид</name>
     <synonym>
       <key>ru</key>
-      <value>Перевозчик</value>
+      <value>Вид</value>
     </synonym>
     <type>
-      <types>CatalogRef.Контрагенты</types>
+      <types>EnumRef.ВидТранспорта</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="821525b6-cf48-41ba-bef5-d8cdb46aec6f">
-    <name>Грузоподъемность</name>
+  <forms uuid="633489cd-d4e0-4c32-be41-aa3d6874d13d">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Грузоподъемность</value>
+      <value>Форма элемента</value>
     </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <scale>3</scale>
-      </numberQualifiers>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="3302fb87-f8f0-48db-84cf-e971011cd06f">
-    <name>Объем</name>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df156d6b-9015-4a56-bee4-f3d4a625db7c">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Объем</value>
+      <value>Форма выбора</value>
     </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <scale>3</scale>
-      </numberQualifiers>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33617594-92c6-496c-ae1d-fa6169e139bb">
+  <producedTypes>
+    <refType typeId="25994b7d-9828-4440-a21f-c6d2c6adb5c4" valueTypeId="3dcb1a86-1d86-4bbb-8cd0-a358c76d65c4"/>
+    <listType typeId="f0cb6eaa-78a0-469c-bd2b-b2782ec03e15" valueTypeId="9f2af4fe-3dcb-46ec-9e4f-cfe7b569f515"/>
+    <managerType typeId="311ab28e-5198-4888-b00f-278ae92a1884" valueTypeId="eaa2a3f8-ce52-44fa-8ed1-806c208e9514"/>
+  </producedTypes>
+  <name>ВидТранспорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид транспорта</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9314e30b-0bb2-4406-8806-9f4925ccbc75">
+    <name>Автомобиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автомобиль</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="18bb4216-89cc-4cd8-8edb-17fdc5250125">
+    <name>Судно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Судно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebdbc51e-db92-4ac5-a46b-8879c642c267">
+    <name>Поезд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поезд</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f11726b2-0489-42ad-991e-e02d183bc56d">
+    <name>Самолет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Самолет</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

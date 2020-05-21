@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
     <name>Номер</name>
     <id>1</id>
@@ -8,8 +8,10 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Номер</segments>
+    <dataPath xsi:type="form:MultiLanguageDataPath">
+      <paths xsi:type="form:DataPath">
+        <segments>Объект.Number</segments>
+      </paths>
     </dataPath>
     <extendedTooltip>
       <name>НомерРасширеннаяПодсказка</name>
@@ -58,8 +60,10 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Дата</segments>
+    <dataPath xsi:type="form:MultiLanguageDataPath">
+      <paths xsi:type="form:DataPath">
+        <segments>Объект.Date</segments>
+      </paths>
     </dataPath>
     <extendedTooltip>
       <name>ДатаРасширеннаяПодсказка</name>
@@ -108,8 +112,10 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ЗаявкаКлиента</segments>
+    <dataPath xsi:type="form:MultiLanguageDataPath">
+      <paths xsi:type="form:DataPath">
+        <segments>Объект.ЗаявкаКлиента</segments>
+      </paths>
     </dataPath>
     <extendedTooltip>
       <name>ЗаявкаКлиентаРасширеннаяПодсказка</name>
@@ -158,8 +164,10 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.СтоимостьПеревозки</segments>
+    <dataPath xsi:type="form:MultiLanguageDataPath">
+      <paths xsi:type="form:DataPath">
+        <segments>Объект.СтоимостьПеревозки</segments>
+      </paths>
     </dataPath>
     <extendedTooltip>
       <name>СтоимостьПеревозкиРасширеннаяПодсказка</name>
@@ -220,8 +228,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Маршрут.НомерСтроки</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.LineNumber</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
         <name>МаршрутНомерСтрокиРасширеннаяПодсказка</name>
@@ -266,8 +276,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Маршрут.ЗаявкаНаПеревозку</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.ЗаявкаНаПеревозку</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
         <name>МаршрутЗаявкаНаПеревозкуРасширеннаяПодсказка</name>
@@ -309,18 +321,20 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>МаршрутНачальнаяТочка</name>
+      <name>МаршрутДатаПогрузки</name>
       <id>32</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Маршрут.ЗаявкаНаПеревозку.ТочкаПогрузки</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.ДатаПогрузки</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
-        <name>МаршрутНачальнаяТочкаРасширеннаяПодсказка</name>
+        <name>МаршрутДатаПогрузкиРасширеннаяПодсказка</name>
         <id>34</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -335,7 +349,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>МаршрутНачальнаяТочкаКонтекстноеМеню</name>
+        <name>МаршрутДатаПогрузкиКонтекстноеМеню</name>
         <id>33</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -359,18 +373,20 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>МаршрутКонечнаяТочка</name>
+      <name>МаршрутДатаРазгрузки</name>
       <id>35</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Маршрут.ЗаявкаНаПеревозку.ТочкаРазрузки</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.ДатаРазгрузки</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
-        <name>МаршрутКонечнаяТочкаРасширеннаяПодсказка</name>
+        <name>МаршрутДатаРазгрузкиРасширеннаяПодсказка</name>
         <id>37</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -385,7 +401,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>МаршрутКонечнаяТочкаКонтекстноеМеню</name>
+        <name>МаршрутДатаРазгрузкиКонтекстноеМеню</name>
         <id>36</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -409,18 +425,20 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>МаршрутПеревозчик</name>
+      <name>МаршрутНачальнаяТочка</name>
       <id>38</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Маршрут.ЗаявкаНаПеревозку.Перевозчик.Description</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.НачальнаяТочка</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
-        <name>МаршрутПеревозчикРасширеннаяПодсказка</name>
+        <name>МаршрутНачальнаяТочкаРасширеннаяПодсказка</name>
         <id>40</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -435,7 +453,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>МаршрутПеревозчикКонтекстноеМеню</name>
+        <name>МаршрутНачальнаяТочкаКонтекстноеМеню</name>
         <id>39</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -459,18 +477,20 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>МаршрутСтоимость</name>
+      <name>МаршрутКонечнаяТочка</name>
       <id>41</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Маршрут.ЗаявкаНаПеревозку.Сумма</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.КонечнаяТочка</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
-        <name>МаршрутСтоимостьРасширеннаяПодсказка</name>
+        <name>МаршрутКонечнаяТочкаРасширеннаяПодсказка</name>
         <id>43</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -485,7 +505,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>МаршрутСтоимостьКонтекстноеМеню</name>
+        <name>МаршрутКонечнаяТочкаКонтекстноеМеню</name>
         <id>42</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -509,18 +529,20 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>МаршрутСтатус</name>
+      <name>МаршрутПеревозчик</name>
       <id>44</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Маршрут.ЗаявкаНаПеревозку.Статус</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.Перевозчик</segments>
+        </paths>
       </dataPath>
       <extendedTooltip>
-        <name>МаршрутСтатусРасширеннаяПодсказка</name>
+        <name>МаршрутПеревозчикРасширеннаяПодсказка</name>
         <id>46</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -535,7 +557,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>МаршрутСтатусКонтекстноеМеню</name>
+        <name>МаршрутПеревозчикКонтекстноеМеню</name>
         <id>45</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -545,7 +567,115 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
-      <editMode>Enter</editMode>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>МаршрутСумма</name>
+      <id>47</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.Сумма</segments>
+        </paths>
+      </dataPath>
+      <extendedTooltip>
+        <name>МаршрутСуммаРасширеннаяПодсказка</name>
+        <id>49</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>МаршрутСуммаКонтекстноеМеню</name>
+        <id>48</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>МаршрутСтатус</name>
+      <id>50</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Объект.Маршрут.Статус</segments>
+        </paths>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>МаршрутСтатусПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>МаршрутСтатусРасширеннаяПодсказка</name>
+        <id>52</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>МаршрутСтатусКонтекстноеМеню</name>
+        <id>51</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -569,6 +699,10 @@
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <handlers>
+      <event>Selection</event>
+      <name>ПеревозчикВыбор</name>
+    </handlers>
     <searchStringAddition>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -602,7 +736,6 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>МаршрутСтрокаПоиска</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -641,7 +774,6 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>МаршрутСостояниеПросмотра</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <horizontalLocation>Left</horizontalLocation>
@@ -681,7 +813,6 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>Маршрут</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -732,6 +863,7 @@
     <enableStartDrag>true</enableStartDrag>
     <enableDrag>true</enableDrag>
     <fileDragMode>AsFileRef</fileDragMode>
+    <rowFilter xsi:type="core:UndefinedValue"/>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
@@ -764,6 +896,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Объект.RegisterRecords</segments>
+    </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>
   </attributes>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce4d178b-b877-4699-9453-da6e96f24cac">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce4d178b-b877-4699-9453-da6e96f24cac">
   <producedTypes>
     <objectType typeId="89ab6836-1b1e-4b54-b789-0a4a91cf33af" valueTypeId="df4ac81f-311a-44fd-8784-e5a085778876"/>
     <refType typeId="1bc64223-75e6-43aa-bb95-fd28b95f55f6" valueTypeId="7f871f10-618d-404b-ba36-23e01914ed6e"/>
@@ -35,6 +35,9 @@
     <type>
       <types>DocumentRef.ЗаявкаКлиента</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -50,10 +53,13 @@
         <precision>10</precision>
       </numberQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="f1582eed-5e65-4db1-994e-212aceb339a6">
+  <forms uuid="8aa07bc6-0af4-4ebe-984a-04b6772f4fb9">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
@@ -81,6 +87,38 @@
       <type>
         <types>DocumentRef.ЗаявкаНаПеревозку</types>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9bddbb29-d96e-4119-af81-cf2e98dd8eec">
+      <name>ДатаПогрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата погрузки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="19b164bb-1dfb-48fd-8fac-723d00a7d9ec">
+      <name>ДатаРазгрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата разгрузки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -91,11 +129,10 @@
         <value>Начальная точка</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>250</length>
-        </stringQualifiers>
+        <types>CatalogRef.ТочкиМаршрута</types>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -106,11 +143,10 @@
         <value>Конечная точка</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>250</length>
-        </stringQualifiers>
+        <types>CatalogRef.ТочкиМаршрута</types>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -121,16 +157,21 @@
         <value>Перевозчик</value>
       </synonym>
       <type>
-        <types>CatalogRef.Контрагенты</types>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="44d41e27-398b-464b-8530-766396a07a7a">
-      <name>Стоимость</name>
+      <name>Сумма</name>
       <synonym>
         <key>ru</key>
-        <value>Стоимость</value>
+        <value>Сумма</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -138,6 +179,8 @@
           <precision>10</precision>
         </numberQualifiers>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -148,8 +191,10 @@
         <value>Статус</value>
       </synonym>
       <type>
-        <types>EnumRef.ПеречислениеСтатусЗаявкиКлиента</types>
+        <types>EnumRef.ПеречислениеСтатусЗаявки</types>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
