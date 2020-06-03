@@ -166,7 +166,7 @@
     </userVisible>
     <dataPath xsi:type="form:MultiLanguageDataPath">
       <paths xsi:type="form:DataPath">
-        <segments>Объект.СтоимостьПеревозки</segments>
+        <segments>Объект.ОбщаяСтоимость</segments>
       </paths>
     </dataPath>
     <extendedTooltip>

@@ -42,10 +42,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="84a0b562-f5dc-4fb2-a3d3-413c4c73524a">
-    <name>СтоимостьПеревозки</name>
+    <name>ОбщаяСтоимость</name>
     <synonym>
       <key>ru</key>
-      <value>Стоимость перевозки</value>
+      <value>Общая стоимость</value>
     </synonym>
     <type>
       <types>Number</types>
