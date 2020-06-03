@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3d0a168-a678-4ece-b6f3-7601d8d5aa80">
+  <producedTypes>
+    <selectionType typeId="f0131ae6-349e-489f-afcc-46a59d6762e5" valueTypeId="4e27501e-a79a-463d-8495-277f14cd7ef7"/>
+    <listType typeId="c80d435d-7d4f-46e8-90eb-cfbb5614736a" valueTypeId="b7b044ce-534d-4ddb-8fd8-d611d960cc9b"/>
+    <managerType typeId="d822607d-f84a-4033-86fb-8488d6f55a7a" valueTypeId="5e294b2b-f1b3-4512-85af-fc03d11139ec"/>
+    <recordSetType typeId="1c285ddd-bb83-405c-9c1e-3bb0135b34c7" valueTypeId="f9252fec-f01a-43be-bcbd-1c186cedbd37"/>
+    <recordKeyType typeId="b3d2cdd6-500c-4e45-bf98-002c4ff6f925" valueTypeId="4b3de80d-c9c3-455c-99e7-4fbf701ecbf5"/>
+    <recordType typeId="a48d4203-2d42-4014-a5ce-c768dd223405" valueTypeId="2fe89c74-d2a1-4a89-a570-1a8a987c4dcb"/>
+  </producedTypes>
+  <name>РасчетыСКлиентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты с клиентами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="d5a4c9b2-c2e7-45b3-b3b9-549ddba54a9b">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <comment>Сколько должен нам клиент</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="fd9f8b3d-80b8-4e11-8034-afe1ce88dc2f">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e79f4551-7190-47d2-9454-af9aee33ef9d">
+    <name>ЗаявкаКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка клиента</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаКлиента</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

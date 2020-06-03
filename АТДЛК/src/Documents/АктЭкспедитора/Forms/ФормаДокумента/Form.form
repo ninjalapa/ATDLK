@@ -8,10 +8,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Number</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Номер</segments>
     </dataPath>
     <extendedTooltip>
       <name>НомерРасширеннаяПодсказка</name>
@@ -60,10 +58,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Date</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Дата</segments>
     </dataPath>
     <extendedTooltip>
       <name>ДатаРасширеннаяПодсказка</name>
@@ -112,10 +108,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Заявка</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Заявка</segments>
     </dataPath>
     <handlers>
       <event>OnChange</event>
@@ -168,10 +162,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Перевозчик</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Клиент</segments>
     </dataPath>
     <extendedTooltip>
       <name>ПеревозчикРасширеннаяПодсказка</name>
@@ -220,10 +212,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Сумма</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Сумма</segments>
     </dataPath>
     <extendedTooltip>
       <name>СуммаРасширеннаяПодсказка</name>
@@ -287,7 +277,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.АктВыполненныхРабот</types>
+      <types>DocumentObject.АктЭкспедитора</types>
     </valueType>
     <view>
       <common>true</common>
@@ -296,7 +286,7 @@
       <common>true</common>
     </edit>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>Объект.RegisterRecords</segments>
+      <segments>Объект.Движения</segments>
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>

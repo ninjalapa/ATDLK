@@ -47,8 +47,10 @@
   <documents>Document.ЗаявкаНаПеревозку</documents>
   <documents>Document.МаршрутныйЛист</documents>
   <documents>Document.ПриходДенег</documents>
-  <documents>Document.АктВыполненныхРабот</documents>
+  <documents>Document.АктЭкспедитора</documents>
   <enums>Enum.ПеречислениеСтатусЗаявки</enums>
   <enums>Enum.ВидТранспорта</enums>
   <enums>Enum.ВидОплаты</enums>
+  <reports>Report.ВзаиморасчетыСКлиентами</reports>
+  <accumulationRegisters>AccumulationRegister.РасчетыСКлиентами</accumulationRegisters>
 </mdclass:Configuration>

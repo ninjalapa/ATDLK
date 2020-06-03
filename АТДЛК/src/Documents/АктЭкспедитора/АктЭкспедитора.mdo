@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df9a4cd6-2589-4c14-a7fd-21e4a1b4790f">
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="106ed554-a7ee-4113-82b7-56e7f6d666af">
   <producedTypes>
-    <objectType typeId="2d21c4b1-9d48-4998-92fc-65250f3fb255" valueTypeId="0de22026-aaaf-4fc6-bb95-9ab9646882e6"/>
-    <refType typeId="a2c7bed2-e2ec-487b-a9a4-e65d1be595b0" valueTypeId="aedaf966-0119-41d0-ba45-e8b0f8a92d8c"/>
-    <selectionType typeId="b05f9572-7c3f-4260-90f0-dba5d015b2dd" valueTypeId="ec776ff4-8397-4e34-b6e0-af864ccaeb96"/>
-    <listType typeId="a1758017-3043-4ee8-bb71-cc36798c5d7c" valueTypeId="7dd6230c-8dfc-4bb3-8ade-9d0106a1730b"/>
-    <managerType typeId="5fce9ef0-d5ad-4689-b95e-0a3075e7973a" valueTypeId="390cf359-cbc4-4921-8a78-37e5382ee940"/>
+    <objectType typeId="3f843512-f426-4c55-b4ff-16c2d1630b2a" valueTypeId="0eda0ab8-4d38-4cbc-9c87-46113212df6d"/>
+    <refType typeId="09fad585-aa70-433f-98b7-e72624ff375e" valueTypeId="9b4f3fd2-5c9d-4192-814e-762f4963ab9c"/>
+    <selectionType typeId="608c2ad2-fe0a-4afb-944a-78189c8f6450" valueTypeId="44e82c28-8101-4b15-b497-59c617689e84"/>
+    <listType typeId="9ee2fe3e-d294-4b30-9f26-9337be010f53" valueTypeId="dcd7cf84-e736-44f9-b244-c813daf36365"/>
+    <managerType typeId="95494aa0-ed4e-431d-93d5-eeeac7fc20d6" valueTypeId="6a13c126-486b-481d-966f-b632b221b6bc"/>
   </producedTypes>
-  <name>ПриходДенег</name>
+  <name>АктЭкспедитора</name>
   <synonym>
     <key>ru</key>
-    <value>Приход денег</value>
+    <value>Акт экспедитора</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ПриходДенег.StandardAttribute.Number</inputByString>
+  <inputByString>Document.АктЭкспедитора.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <basedOn>Document.ЗаявкаКлиента</basedOn>
   <createOnInput>Use</createOnInput>
@@ -24,11 +24,11 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ПриходДенег.Form.ФормаДокумента</defaultObjectForm>
+  <defaultObjectForm>Document.АктЭкспедитора.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.РасчетыСКлиентами</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="4a7c45e8-32e8-4819-8f75-a2f58be8f979">
+  <attributes uuid="11d91f96-c010-4389-b8a0-fdafe97b7a42">
     <name>Заявка</name>
     <synonym>
       <key>ru</key>
@@ -40,7 +40,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="502b55f1-0428-4c2c-9cbb-55413488d349">
+  <attributes uuid="d7b1d2a0-d4af-4afe-9a3c-3c12cc3cf3fd">
     <name>Клиент</name>
     <synonym>
       <key>ru</key>
@@ -52,7 +52,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="ec27656b-8771-40e4-8d17-7d2a327accde">
+  <attributes uuid="6c0f8e4c-b821-4d98-aac8-a7a14d12a344">
     <name>Сумма</name>
     <synonym>
       <key>ru</key>
@@ -68,19 +68,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="46d7476e-daf4-46d6-85a9-a2680e27b12e">
-    <name>Вид</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вид</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ВидОплаты</types>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="f1df2183-fe03-4df8-b17a-4a6f15fe8894">
+  <forms uuid="6f3894bf-56b0-42aa-bfac-6fda20893ddf">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>

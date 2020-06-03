@@ -7,7 +7,7 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>344a3a6c-e68e-43d5-a6ac-3575fcb583f7</content>
   <content>Document.ПриходДенег</content>
-  <content>Document.АктВыполненныхРабот</content>
+  <content>Document.АктЭкспедитора</content>
+  <content>Report.ВзаиморасчетыСКлиентами</content>
 </mdclass:Subsystem>
