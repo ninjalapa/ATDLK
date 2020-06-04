@@ -169,6 +169,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="71e88623-55f6-4d54-a55e-ae85042e309c">
+    <name>МаршрутныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрутный лист</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.МаршрутныйЛист</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="e2223941-4e13-4546-93a8-31faffe19ab3">
     <name>ФормаДокумента</name>
     <synonym>
