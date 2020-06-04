@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e60f015-d71f-4b91-8a73-331a38771646">
+  <producedTypes>
+    <objectType typeId="7f965a56-69c5-47e8-a910-06e4da77a618" valueTypeId="e14844b4-47b6-47ef-8287-98c8b4490bce"/>
+    <refType typeId="808eb9ad-e6da-45d2-a07b-ea01ef52a712" valueTypeId="3689539b-42c2-44bf-9d68-dea563d74789"/>
+    <selectionType typeId="1b9b83bf-095d-42b6-854d-566968bc23f5" valueTypeId="e9e94a3f-2a9c-465b-9c82-45eada5b2417"/>
+    <listType typeId="c2c9a866-2eba-4015-8801-ca14e3f1b9f1" valueTypeId="b9c1182b-ca16-497e-9671-cc31497f7aad"/>
+    <managerType typeId="3c8d20ff-e087-46d8-b44c-c2a279d4fac6" valueTypeId="fd97011b-c272-4376-85ec-0c59f33d3fed"/>
+  </producedTypes>
+  <name>АктПеревозчика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт перевозчика</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.АктПеревозчика.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ЗаявкаНаПеревозку</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.РасчетыСПеревозчиками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e88e65d7-4ca1-45e7-b5d3-b2452f4043de">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаПеревозку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d3088ef-45ce-4629-ba01-4274f7c69c97">
+    <name>Перевозчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевозчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e5d75b0-4a25-458f-a196-8f611bebe4ed">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

@@ -10,4 +10,5 @@
   <content>Document.ПриходДенег</content>
   <content>Document.АктЭкспедитора</content>
   <content>Report.ВзаиморасчетыСКлиентами</content>
+  <content>Report.ВзаиморасчетыСПеревозчиками</content>
 </mdclass:Subsystem>

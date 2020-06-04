@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad43fe04-e184-4d0e-9c54-62b94f90f588">
+  <producedTypes>
+    <selectionType typeId="8d9a0629-d087-4d78-bc26-b45a265f5a30" valueTypeId="fb810928-cd5c-468c-8414-8fc3e5a2c186"/>
+    <listType typeId="81743765-1001-49c5-a6aa-b3d45519c507" valueTypeId="f0459bc1-d04a-405f-aab6-1dfe41540cb1"/>
+    <managerType typeId="47a23bf5-cff1-4b84-91f6-b57dea194778" valueTypeId="06a77a20-a2f2-4a68-82b0-4820b2825d2a"/>
+    <recordSetType typeId="e3cd77da-7f16-4c2c-8a5b-64d8843db233" valueTypeId="8f5e1d0b-17c3-4b46-b1a7-6ddf86130e3b"/>
+    <recordKeyType typeId="d1d1b5c9-a2fc-4e95-9b05-eb73196698d1" valueTypeId="e14423d6-3257-4d19-938f-6eaaef81b338"/>
+    <recordType typeId="86b400da-4f6e-4264-962c-feafdf1eaab5" valueTypeId="e323642f-55eb-4ad8-ab9f-4d0c3288c726"/>
+  </producedTypes>
+  <name>РасчетыСПеревозчиками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты с перевозчиками</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="dfa886b3-4347-46e3-98a5-cb140323b56f">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <comment>Сколько мы должны перевозчику</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="8937bec2-40ee-4fc6-b44a-c0d02c67a8ce">
+    <name>Перевозчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевозчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4c087587-66d3-4f51-b265-5d680ec9456c">
+    <name>ЗаявкаНаПеревозку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на перевозку</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаПеревозку</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

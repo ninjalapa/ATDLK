@@ -30,8 +30,8 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.НСИ</subsystems>
-  <subsystems>Subsystem.Логистика</subsystems>
   <subsystems>Subsystem.Финансы</subsystems>
+  <subsystems>Subsystem.Логистика</subsystems>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.БазовыеПрава</roles>
   <roles>Role.ДобавлениеИзменениеКонтрагентов</roles>
@@ -48,9 +48,13 @@
   <documents>Document.МаршрутныйЛист</documents>
   <documents>Document.ПриходДенег</documents>
   <documents>Document.АктЭкспедитора</documents>
+  <documents>Document.ОплатаПеревозчику</documents>
+  <documents>Document.АктПеревозчика</documents>
   <enums>Enum.ПеречислениеСтатусЗаявки</enums>
   <enums>Enum.ВидТранспорта</enums>
   <enums>Enum.ВидОплаты</enums>
   <reports>Report.ВзаиморасчетыСКлиентами</reports>
+  <reports>Report.ВзаиморасчетыСПеревозчиками</reports>
   <accumulationRegisters>AccumulationRegister.РасчетыСКлиентами</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.РасчетыСПеревозчиками</accumulationRegisters>
 </mdclass:Configuration>

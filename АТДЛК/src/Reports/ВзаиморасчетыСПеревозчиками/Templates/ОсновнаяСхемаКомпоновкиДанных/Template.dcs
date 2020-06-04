@@ -7,15 +7,15 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Клиент</dataPath>
-			<field>Клиент</field>
+			<dataPath>Перевозчик</dataPath>
+			<field>Перевозчик</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ЗаявкаКлиента</dataPath>
-			<field>ЗаявкаКлиента</field>
+			<dataPath>ЗаявкаНаПеревозку</dataPath>
+			<field>ЗаявкаНаПеревозку</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
@@ -28,26 +28,6 @@
 				<dcscom:balanceGroupName>Группа</dcscom:balanceGroupName>
 				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
 			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПрихода</dataPath>
-			<field>СуммаПрихода</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма прихода</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаРасхода</dataPath>
-			<field>СуммаРасхода</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма расхода</v8:content>
-				</v8:item>
-			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Долг</dataPath>
@@ -64,16 +44,36 @@
 				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРасхода</dataPath>
+			<field>СуммаРасхода</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма расхода</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПрихода</dataPath>
+			<field>СуммаПрихода</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма прихода</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	РасчетыСКлиентамиОстаткиИОбороты.Клиент КАК Клиент,
-	РасчетыСКлиентамиОстаткиИОбороты.ЗаявкаКлиента КАК ЗаявкаКлиента,
-	РасчетыСКлиентамиОстаткиИОбороты.СуммаНачальныйОстаток КАК СуммаНачальныйОстаток,
-	РасчетыСКлиентамиОстаткиИОбороты.СуммаКонечныйОстаток КАК Долг,
-	РасчетыСКлиентамиОстаткиИОбороты.СуммаПриход КАК СуммаПрихода,
-	РасчетыСКлиентамиОстаткиИОбороты.СуммаРасход КАК СуммаРасхода
+	РасчетыСПеревозчикамиОстаткиИОбороты.Перевозчик КАК Перевозчик,
+	РасчетыСПеревозчикамиОстаткиИОбороты.ЗаявкаНаПеревозку КАК ЗаявкаНаПеревозку,
+	РасчетыСПеревозчикамиОстаткиИОбороты.СуммаНачальныйОстаток КАК СуммаНачальныйОстаток,
+	РасчетыСПеревозчикамиОстаткиИОбороты.СуммаКонечныйОстаток КАК Долг,
+	РасчетыСПеревозчикамиОстаткиИОбороты.СуммаПриход КАК СуммаПрихода,
+	РасчетыСПеревозчикамиОстаткиИОбороты.СуммаРасход КАК СуммаРасхода
 ИЗ
-	РегистрНакопления.РасчетыСКлиентами.ОстаткиИОбороты КАК РасчетыСКлиентамиОстаткиИОбороты</query>
+	РегистрНакопления.РасчетыСПеревозчиками.ОстаткиИОбороты КАК РасчетыСПеревозчикамиОстаткиИОбороты</query>
 	</dataSet>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -110,17 +110,17 @@
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
-		<dcsset:name>ДолгиКлиентов</dcsset:name>
+		<dcsset:name>ДолгиПередПеревозчками</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>По клиентам</v8:content>
+				<v8:content>По перевозчиками</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Клиент</dcsset:field>
+					<dcsset:field>Перевозчик</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаПрихода</dcsset:field>
@@ -143,7 +143,7 @@
 		</dcsset:settings>
 	</settingsVariant>
 	<settingsVariant>
-		<dcsset:name>ДолгиПоЗаявкам</dcsset:name>
+		<dcsset:name>ДолгиПоЗаявкамНаПеревозку</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -153,10 +153,10 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ЗаявкаКлиента</dcsset:field>
+					<dcsset:field>ЗаявкаНаПеревозку</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Клиент</dcsset:field>
+					<dcsset:field>Перевозчик</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаПрихода</dcsset:field>
