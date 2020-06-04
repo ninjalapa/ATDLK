@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29897af8-458e-4654-80ce-6055266dad49">
+  <producedTypes>
+    <selectionType typeId="b2537e38-dfc8-43b7-a51f-9b8ed50658e5" valueTypeId="5852f9a8-bcbd-4f1d-a3c0-c85c9b637906"/>
+    <listType typeId="051ab9c7-9363-44f8-9925-98647f4f562f" valueTypeId="001ec75a-ff75-4448-a839-09663b8ed55d"/>
+    <managerType typeId="8f2fe46a-f293-4329-b1d8-647ecbe3c800" valueTypeId="8b6f4936-9201-4192-bac9-50dbbc28bf22"/>
+    <recordSetType typeId="5bde0347-ccc3-42a4-ab40-ad74b2bf8ae0" valueTypeId="9fb36ea0-b3ad-4226-b7e6-066856c552fc"/>
+    <recordKeyType typeId="b6e9c15b-5987-43f5-a590-d306f066c0bf" valueTypeId="9174919e-3613-4838-a623-2b05764ea42c"/>
+    <recordType typeId="1046987b-c808-4846-b3b1-ecf90c5afe61" valueTypeId="b60f03a3-82c2-4329-97e1-4bc0f34727fd"/>
+  </producedTypes>
+  <name>Прибыль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прибыль</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="ab7b2c41-5819-4d45-8574-96fe2117d363">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="35d899aa-9d80-4c53-b3c3-34d906cb251d">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаКлиента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

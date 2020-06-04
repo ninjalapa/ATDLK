@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3d0a168-a678-4ece-b6f3-7601d8d5aa80">
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3d0a168-a678-4ece-b6f3-7601d8d5aa80">
   <producedTypes>
     <selectionType typeId="f0131ae6-349e-489f-afcc-46a59d6762e5" valueTypeId="4e27501e-a79a-463d-8495-277f14cd7ef7"/>
     <listType typeId="c80d435d-7d4f-46e8-90eb-cfbb5614736a" valueTypeId="b7b044ce-534d-4ddb-8fd8-d611d960cc9b"/>
@@ -29,6 +29,8 @@
         <precision>10</precision>
       </numberQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <dimensions uuid="fd9f8b3d-80b8-4e11-8034-afe1ce88dc2f">
@@ -40,6 +42,8 @@
     <type>
       <types>CatalogRef.Контрагенты</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
@@ -52,6 +56,8 @@
     <type>
       <types>DocumentRef.ЗаявкаКлиента</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>

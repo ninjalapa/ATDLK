@@ -24,6 +24,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.МаршрутныйЛист.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.Прибыль</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="610fa1a2-9077-4131-aaf5-5a45bccde709">

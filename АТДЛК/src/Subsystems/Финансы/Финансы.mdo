@@ -11,4 +11,7 @@
   <content>Document.АктЭкспедитора</content>
   <content>Report.ВзаиморасчетыСКлиентами</content>
   <content>Report.ВзаиморасчетыСПеревозчиками</content>
+  <content>Report.Прибыль</content>
+  <content>Document.ОплатаПеревозчику</content>
+  <content>Document.АктПеревозчика</content>
 </mdclass:Subsystem>

@@ -55,6 +55,8 @@
   <enums>Enum.ВидОплаты</enums>
   <reports>Report.ВзаиморасчетыСКлиентами</reports>
   <reports>Report.ВзаиморасчетыСПеревозчиками</reports>
+  <reports>Report.Прибыль</reports>
   <accumulationRegisters>AccumulationRegister.РасчетыСКлиентами</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.РасчетыСПеревозчиками</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Прибыль</accumulationRegisters>
 </mdclass:Configuration>
